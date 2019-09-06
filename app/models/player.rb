@@ -1,5 +1,2 @@
 class Player < ApplicationRecord
-
-  
-
 end
