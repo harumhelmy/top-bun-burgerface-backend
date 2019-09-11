@@ -5,6 +5,11 @@ class AvatarsController < ApplicationController
         render json: avatars
     end
 
+    def show
+        avatar = Avatar.find(params[:id])
+        render json: avatar
+    end
+
 
 
 end
