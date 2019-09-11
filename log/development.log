@@ -5256,3 +5256,1457 @@ Processing by PlayersController#index as */*
 Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (7.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4228968792017812815)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddHighScoreToPlayers (20190911140521)
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (41.0ms)[0m  [1m[35mALTER TABLE "players" ADD "high_score" integer[0m
+  ↳ db/migrate/20190911140521_add_high_score_to_players.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (4.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190911140521"]]
+  ↳ bin/rails:9
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4228968792017812815)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:10:58 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/harum/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 35ms (Views: 1.0ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/players/JohnJohn" for ::1 at 2019-09-11 10:12:39 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"JohnJohn"}
+  [1m[36mPlayer Load (1.9ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "JohnJohn"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/players/JohnJohn" for ::1 at 2019-09-11 10:12:47 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"JohnJohn"}
+  [1m[36mPlayer Load (1.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "JohnJohn"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/players/johnjohn" for ::1 at 2019-09-11 10:13:16 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"johnjohn"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "johnjohn"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:13:53 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:14:02 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:23:25 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/players/" for ::1 at 2019-09-11 10:24:28 -0400
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (52.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 54ms (Views: 1.7ms | ActiveRecord: 52.3ms)
+
+
+Started GET "/players/" for ::1 at 2019-09-11 10:24:59 -0400
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (20.0ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 22ms (Views: 1.3ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:25:05 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:25:37 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (1.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/3" for ::1 at 2019-09-11 10:26:09 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/3"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:26:32 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/3" for ::1 at 2019-09-11 10:28:35 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/3"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/3" for ::1 at 2019-09-11 10:31:06 -0400
+  
+ActionController::RoutingError (No route matches [PATCH] "/3"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-11 10:32:09 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/harum/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/harum/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players" for ::1 at 2019-09-11 10:32:11 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.8ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 52ms (Views: 7.1ms | ActiveRecord: 42.1ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 10:32:32 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:33:04 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:34:31 -0400
+Started GET "/players/harum" for ::1 at 2019-09-11 10:34:31 -0400
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:10
+Completed 200 OK in 87214ms (Views: 0.6ms | ActiveRecord: 12.7ms)
+
+
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:10
+Completed 200 OK in 5180ms (Views: 0.4ms | ActiveRecord: 5.8ms)
+
+
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"harum"}
+Completed 500 Internal Server Error in 1799ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `show'
+app/controllers/players_controller.rb:10:in `show'
+Started GET "/players" for ::1 at 2019-09-11 10:34:42 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (1.0ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 109ms (Views: 73.1ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-11 10:34:47 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/harum/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/harum/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 51ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:34:56 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:10
+Completed 200 OK in 6611ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:35:23 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 35ms (Views: 0.7ms | ActiveRecord: 24.7ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:37:54 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:39:46 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players" for ::1 at 2019-09-11 10:40:55 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (37.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 43ms (Views: 4.2ms | ActiveRecord: 37.6ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 10:40:59 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/harum" for ::1 at 2019-09-11 10:41:21 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/avatars/" for ::1 at 2019-09-11 10:41:55 -0400
+Processing by AvatarsController#index as HTML
+  [1m[36mAvatar Load (7.2ms)[0m  [1m[34mSELECT "avatars".* FROM "avatars"[0m
+  ↳ app/controllers/avatars_controller.rb:5
+Completed 200 OK in 35ms (Views: 14.4ms | ActiveRecord: 17.8ms)
+
+
+Started GET "/avatars/3" for ::1 at 2019-09-11 10:41:57 -0400
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for AvatarsController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/avatars/" for ::1 at 2019-09-11 10:42:35 -0400
+Processing by AvatarsController#index as HTML
+  [1m[36mAvatar Load (0.3ms)[0m  [1m[34mSELECT "avatars".* FROM "avatars"[0m
+  ↳ app/controllers/avatars_controller.rb:5
+Completed 200 OK in 14ms (Views: 4.5ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/avatars/3" for ::1 at 2019-09-11 10:42:37 -0400
+Processing by AvatarsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAvatar Load (0.2ms)[0m  [1m[34mSELECT  "avatars".* FROM "avatars" WHERE "avatars"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/avatars_controller.rb:9
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Avatar with 'id'={:id=>"3"}):
+  
+app/controllers/avatars_controller.rb:9:in `show'
+Started GET "/avatars/3" for ::1 at 2019-09-11 10:43:05 -0400
+Processing by AvatarsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAvatar Load (0.4ms)[0m  [1m[34mSELECT  "avatars".* FROM "avatars" WHERE "avatars"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/avatars_controller.rb:9
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/avatars/3" for ::1 at 2019-09-11 10:43:44 -0400
+Processing by AvatarsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAvatar Load (0.2ms)[0m  [1m[34mSELECT  "avatars".* FROM "avatars" WHERE "avatars"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/avatars_controller.rb:9
+Completed 404 Not Found in 11ms (ActiveRecord: 8.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Avatar with 'id'={:id=>"3"}):
+  
+app/controllers/avatars_controller.rb:9:in `show'
+Started GET "/avatars/3" for ::1 at 2019-09-11 10:43:56 -0400
+Processing by AvatarsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAvatar Load (0.4ms)[0m  [1m[34mSELECT  "avatars".* FROM "avatars" WHERE "avatars"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/avatars_controller.rb:9
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 10:44:18 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/players/4" for ::1 at 2019-09-11 10:44:23 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "4"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/1" for ::1 at 2019-09-11 10:44:27 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/players/2" for ::1 at 2019-09-11 10:44:29 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 10:44:30 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (1.1ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:45:59 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.1ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:46:38 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:47:10 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players/harum" for ::1 at 2019-09-11 10:48:21 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/players/harum" for ::1 at 2019-09-11 10:48:23 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/players/harum" for ::1 at 2019-09-11 10:48:31 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.9ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 10:49:01 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (1.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 10:49:29 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.4ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/players_controller.rb:9:in `show'
+Started GET "/players/harum" for ::1 at 2019-09-11 10:49:41 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/players_controller.rb:9:in `show'
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:51:03 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mCACHE Player Load (0.0ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:10
+Completed 200 OK in 33815ms (Views: 0.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:51:37 -0400
+Started GET "/players/3" for ::1 at 2019-09-11 10:51:37 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (1.7ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+Started GET "/players/3" for ::1 at 2019-09-11 10:51:56 -0400
+Started GET "/players/3" for ::1 at 2019-09-11 10:51:56 -0400
+  ↳ app/controllers/players_controller.rb:10
+Started GET "/players/3" for ::1 at 2019-09-11 10:51:56 -0400
+Completed 200 OK in 19403ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+Processing by PlayersController#show as HTML
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  Parameters: {"id"=>"3"}
+Processing by PlayersController#show as HTML
+  [1m[36mPlayer Load (1055.5ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2526ms (ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 1072ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 10:52:02 -0400
+  ↳ app/controllers/players_controller.rb:10
+  Parameters: {"id"=>"3"}
+  
+SystemExit (exit):
+  
+Completed 200 OK in 5860ms (Views: 1.6ms | ActiveRecord: 1057.4ms)
+
+
+Completed 500 Internal Server Error in 9082ms (ActiveRecord: 0.0ms)
+
+
+SystemExit (exit):
+  
+  
+  
+(byebug):1:in `exit'
+(byebug):1:in `show'
+app/controllers/players_controller.rb:10:in `show'
+SystemExit (exit):
+(byebug):1:in `exit'
+(byebug):1:in `show'
+app/controllers/players_controller.rb:10:in `show'
+  
+(byebug):1:in `exit'
+(byebug):1:in `show'
+app/controllers/players_controller.rb:10:in `show'
+Started GET "/players/" for ::1 at 2019-09-11 10:52:15 -0400
+Started GET "/players/3" for ::1 at 2019-09-11 10:52:15 -0400
+Started GET "/players/" for ::1 at 2019-09-11 10:52:15 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (1.8ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 76ms (Views: 1.0ms | ActiveRecord: 14.1ms)
+
+
+Started GET "/players/" for ::1 at 2019-09-11 10:52:17 -0400
+Processing by PlayersController#index as HTML
+Processing by PlayersController#index as HTML
+Processing by PlayersController#index as HTML
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (12.1ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  [1m[36mPlayer Load (22.0ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+  ↳ app/controllers/players_controller.rb:5
+  [1m[36mPlayer Load (17.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+  [1m[36mPlayer Load (13.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+Completed 200 OK in 153ms (Views: 4.3ms | ActiveRecord: 45.0ms)
+
+
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 326ms (Views: 254.8ms | ActiveRecord: 13.4ms)
+
+
+Completed 200 OK in 310ms (Views: 95.3ms | ActiveRecord: 160.9ms)
+
+
+Completed 200 OK in 284ms (Views: 190.1ms | ActiveRecord: 36.2ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 10:52:20 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (1.6ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 22ms (Views: 1.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 10:55:32 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (3.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 14ms (Views: 1.0ms | ActiveRecord: 3.3ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 10:56:49 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mPlayer Load (1.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mCACHE Player Load (0.0ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mCACHE Player Load (0.0ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+  [1m[36mPlayer Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:16
+Completed 204 No Content in 107188ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:59:11 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 10:59:56 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:00:08 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (1.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+  [1m[36mPlayer Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:16
+Completed 204 No Content in 246362ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for ::1 at 2019-09-11 11:04:20 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/harum/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/harum/.rvm/gems/ruby-2.6.3/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 14ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/players/harum" for ::1 at 2019-09-11 11:04:37 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/harum" for ::1 at 2019-09-11 11:04:40 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/harum" for ::1 at 2019-09-11 11:04:42 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players/harum" for ::1 at 2019-09-11 11:04:42 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:04:47 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:06:13 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+Started GET "/players/harum" for ::1 at 2019-09-11 11:09:17 -0400
+  [1m[36mPlayer Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+Started GET "/players/3" for ::1 at 2019-09-11 11:09:17 -0400
+  ↳ app/controllers/players_controller.rb:16
+Started GET "/players/harum" for ::1 at 2019-09-11 11:09:17 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:16
+Completed 204 No Content in 184117ms (ActiveRecord: 3.6ms)
+
+
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"harum"}
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/players/harum" for ::1 at 2019-09-11 11:09:20 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/players/" for ::1 at 2019-09-11 11:09:23 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 16ms (Views: 5.7ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:09:37 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.9ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:09:39 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 11:10:37 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/players/harum" for ::1 at 2019-09-11 11:10:58 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 11:11:19 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (2.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/players/3" for ::1 at 2019-09-11 11:11:31 -0400
+Processing by PlayersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:15:16 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 5.5ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:15:40 -0400
+Processing by PlayersController#update as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:23:27 -0400
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:23:27 -0400
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:23:27 -0400
+  [1m[36mPlayer Exists (2.4ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:16
+Completed 204 No Content in 467121ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:23:27 -0400
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:23:27 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:23:28 -0400
+Processing by PlayersController#show as */*
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  Parameters: {"id"=>"Harum"}
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (1.0ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+  [1m[36mPlayer Load (1.0ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 5.5ms)
+
+
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:23:36 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:23:54 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 9.0ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:24:19 -0400
+Processing by PlayersController#update as JSON
+  Parameters: {"id"=>"3"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+  [1m[36mPlayer Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" IS NULL AND "players"."id" != $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:16
+  [1m[36mPlayer Update (3.9ms)[0m  [1m[33mUPDATE "players" SET "name" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["name", nil], ["updated_at", "2019-09-11 15:27:38.653596"], ["id", 3]]
+  ↳ app/controllers/players_controller.rb:16
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:16
+Completed 204 No Content in 199028ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/players/" for ::1 at 2019-09-11 11:27:49 -0400
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 33ms (Views: 18.2ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/players/Trob" for ::1 at 2019-09-11 11:29:04 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Trob"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Trob"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 21ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/players/Trob" for ::1 at 2019-09-11 11:29:06 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Trob"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Trob"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:29:12 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.9ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/players/TRob" for ::1 at 2019-09-11 11:29:21 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"TRob"}
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "TRob"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 4.4ms)
+
+
+Started PATCH "/players/4" for ::1 at 2019-09-11 11:29:46 -0400
+Processing by PlayersController#update as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mPlayer Load (3.5ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+Started GET "/players/" for ::1 at 2019-09-11 11:32:13 -0400
+Started GET "/players/" for ::1 at 2019-09-11 11:32:13 -0400
+Started GET "/players/TRob" for ::1 at 2019-09-11 11:32:13 -0400
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+Processing by PlayersController#index as HTML
+Processing by PlayersController#index as HTML
+  [1m[36mPlayer Exists (3.0ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" IS NULL AND "players"."id" != $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:16
+  [1m[36mPlayer Load (10.8ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  [1m[36mPlayer Load (11.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+  [1m[35m (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 13ms (Views: 1.4ms | ActiveRecord: 11.4ms)
+
+
+  ↳ app/controllers/players_controller.rb:16
+Completed 200 OK in 14ms (Views: 2.6ms | ActiveRecord: 10.8ms)
+
+
+Completed 200 OK in 146588ms (Views: 0.3ms | ActiveRecord: 10.9ms)
+
+
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"TRob"}
+  [1m[36mPlayer Load (7.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "TRob"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 10ms (Views: 0.6ms | ActiveRecord: 7.5ms)
+
+
+Started PUT "/players/4" for ::1 at 2019-09-11 11:32:47 -0400
+Processing by PlayersController#update as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+  [1m[36mPlayer Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" IS NULL AND "players"."id" != $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/players_controller.rb:16
+Completed 200 OK in 39366ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/players/TRob" for ::1 at 2019-09-11 11:34:17 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"TRob"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "TRob"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:34:28 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:34:29 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players/TRob" for ::1 at 2019-09-11 11:34:34 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"TRob"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "TRob"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/players/4" for ::1 at 2019-09-11 11:34:56 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"name"=>"cookies", "id"=>"4", "player"=>{"name"=>"cookies"}}
+  [1m[36mPlayer Load (0.8ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+  [1m[36mPlayer Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "cookies"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:16
+  [1m[36mPlayer Update (0.6ms)[0m  [1m[33mUPDATE "players" SET "name" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["name", "cookies"], ["updated_at", "2019-09-11 15:37:27.301807"], ["id", 4]]
+  ↳ app/controllers/players_controller.rb:16
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:16
+Completed 200 OK in 151175ms (Views: 0.4ms | ActiveRecord: 4.5ms)
+
+
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlayer Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mPlayer Update (2.5ms)[0m  [1m[33mUPDATE "players" SET "name" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["name", "Harum"], ["updated_at", "2019-09-11 15:37:55.828804"], ["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlayer Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlayer Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "TRob"], ["id", 4], ["LIMIT", 1]]
+  [1m[36mPlayer Update (0.4ms)[0m  [1m[33mUPDATE "players" SET "name" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["name", "TRob"], ["updated_at", "2019-09-11 15:39:10.534560"], ["id", 4]]
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPlayer Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  [1m[36mPlayer Update (0.3ms)[0m  [1m[33mUPDATE "players" SET "name" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["name", "Harum"], ["updated_at", "2019-09-11 15:39:20.114552"], ["id", 3]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:40:47 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.7ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 12.5ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:41:09 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>1}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+Completed 400 Bad Request in 93675ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: player):
+  
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:42:42 -0400
+app/controllers/players_controller.rb:23:in `player_params'
+app/controllers/players_controller.rb:16:in `update'
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:42:42 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>0}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (0.6ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+Completed 400 Bad Request in 9141ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: player):
+  
+app/controllers/players_controller.rb:23:in `player_params'
+app/controllers/players_controller.rb:16:in `update'
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>0}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+Completed 500 Internal Server Error in 1492ms (ActiveRecord: 0.6ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `update'
+app/controllers/players_controller.rb:16:in `update'
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:42:56 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>0}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (3.5ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/players_controller.rb:16
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 20.3ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  
+app/controllers/players_controller.rb:16:in `update'
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:43:07 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (4.5ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 34ms (Views: 7.0ms | ActiveRecord: 4.5ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:43:29 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>1}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (3.9ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (5.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/players_controller.rb:16
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 10.4ms)
+
+
+  
+ArgumentError (When assigning attributes, you must pass a hash as an argument.):
+  
+app/controllers/players_controller.rb:16:in `update'
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:44:38 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>0}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (1.1ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 13.7ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `update'
+app/controllers/players_controller.rb:16:in `update'
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:44:59 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>0}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (146.0ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:45:38 -0400
+Completed 500 Internal Server Error in 38436ms (ActiveRecord: 146.0ms)
+
+
+  
+SystemExit (exit):
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:45:38 -0400
+  
+Processing by PlayersController#show as */*
+(byebug):1:in `exit'
+(byebug):1:in `update'
+app/controllers/players_controller.rb:16:in `update'
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (195.6ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 595ms (Views: 6.9ms | ActiveRecord: 195.6ms)
+
+
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (1.1ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 37ms (Views: 10.8ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:45:53 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>1}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (1.0ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1
+  [1m[36mPlayer Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ (byebug):1
+  [1m[36mPlayer Update (0.4ms)[0m  [1m[33mUPDATE "players" SET "updated_at" = $1, "high_score" = $2 WHERE "players"."id" = $3[0m  [["updated_at", "2019-09-11 15:46:15.544595"], ["high_score", 1], ["id", 3]]
+  ↳ (byebug):1
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ (byebug):1
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:16
+  [1m[36mPlayer Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:16
+Completed 200 OK in 26133ms (Views: 0.3ms | ActiveRecord: 15.6ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:46:39 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>0}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Update (0.7ms)[0m  [1m[33mUPDATE "players" SET "high_score" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["high_score", 0], ["updated_at", "2019-09-11 15:46:39.116890"], ["id", 3]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:15
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 6.7ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:46:50 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>0}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:15
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:49:03 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:49:15 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>1}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (3.1ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Update (0.4ms)[0m  [1m[33mUPDATE "players" SET "high_score" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["high_score", 1], ["updated_at", "2019-09-11 15:49:15.767468"], ["id", 3]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:15
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 8.4ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:49:16 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>0}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Update (0.3ms)[0m  [1m[33mUPDATE "players" SET "high_score" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["high_score", 0], ["updated_at", "2019-09-11 15:49:16.783897"], ["id", 3]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:15
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:49:27 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>0}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (1.5ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:15
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:49:59 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.5ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:50:10 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>1}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (1.1ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Update (1.7ms)[0m  [1m[33mUPDATE "players" SET "high_score" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["high_score", 1], ["updated_at", "2019-09-11 15:50:10.973866"], ["id", 3]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:15
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:52:19 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:52:51 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>4}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (0.2ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Update (1.7ms)[0m  [1m[33mUPDATE "players" SET "high_score" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["high_score", 4], ["updated_at", "2019-09-11 15:52:51.570747"], ["id", 3]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:15
+Completed 200 OK in 10ms (Views: 0.4ms | ActiveRecord: 4.8ms)
+
+
+Started PATCH "/players/3" for ::1 at 2019-09-11 11:53:58 -0400
+Processing by PlayersController#update as */*
+  Parameters: {"data"=>{"high_score"=>6}, "id"=>"3", "player"=>{}}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:14
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "players" WHERE "players"."name" = $1 AND "players"."id" != $2 LIMIT $3[0m  [["name", "Harum"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[36mPlayer Update (0.4ms)[0m  [1m[33mUPDATE "players" SET "high_score" = $1, "updated_at" = $2 WHERE "players"."id" = $3[0m  [["high_score", 6], ["updated_at", "2019-09-11 15:53:58.637039"], ["id", 3]]
+  ↳ app/controllers/players_controller.rb:15
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/players_controller.rb:15
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:55:27 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:55:48 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:56:00 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/players/Harum" for ::1 at 2019-09-11 11:57:03 -0400
+Processing by PlayersController#show as */*
+  Parameters: {"id"=>"Harum"}
+  [1m[36mPlayer Load (0.4ms)[0m  [1m[34mSELECT  "players".* FROM "players" WHERE "players"."name" = $1 LIMIT $2[0m  [["name", "Harum"], ["LIMIT", 1]]
+  ↳ app/controllers/players_controller.rb:9
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/players" for ::1 at 2019-09-11 12:04:03 -0400
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (8.0ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 12ms (Views: 3.3ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/players" for ::1 at 2019-09-11 12:04:03 -0400
+Processing by PlayersController#index as */*
+  [1m[36mPlayer Load (0.3ms)[0m  [1m[34mSELECT "players".* FROM "players"[0m
+  ↳ app/controllers/players_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
